@@ -1,0 +1,20 @@
+﻿.\.venv\Scripts\python.exe : 2026/11/18 09:54:30 INFO mlflow.tracking.fluent: Experiment with name 
+'snn-efficiency-benchmark' does not exist. Creating a new experiment.
+At line:1 char:346
++ ... t=Get-Date; .\.venv\Scripts\python.exe -u run_all.py *> results\full_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026/11/18 09:5...new experiment.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+✅ self-check passed; CNN MACs/inference (thop == analytic) = 1,533,952
+✅ MNIST loaded: train 60000, test 10000, epochs 10
+✅ cnn_T0_seed0: acc 0.9912, ops 1,533,952, E_est 7.056 uJ, lat 0.624 ms/batch, train 8s, temp 68->68C, throttle False, FGSM 0.05:0.9478 0.1:0.7971 0.2:0.3603
+✅ snn_T5_seed0: acc 0.9818, ops 1,230,422, spikes/neuron 0.609, E_est 1.107 uJ, lat 9.539 ms/batch, train 73s, temp 74->72C, throttle False
+✅ snn_T10_seed0: acc 0.9882, ops 1,811,476, spikes/neuron 0.883, E_est 1.630 uJ, lat 32.457 ms/batch, train 290s, temp 68->66C, throttle False, FGSM 0.05:0.9696 0.1:0.9307 0.2:0.7819
+✅ snn_T25_seed0: acc 0.9866, ops 3,872,132, spikes/neuron 1.678, E_est 3.485 uJ, lat 100.653 ms/batch, train 703s, temp 67->63C, throttle False
+✅ cnn_T0_seed1: acc 0.9913, ops 1,533,952, E_est 7.056 uJ, lat 1.269 ms/batch, train 16s, temp 66->66C, throttle False, FGSM 0.05:0.9595 0.1:0.8544 0.2:0.4046
+✅ snn_T5_seed1: acc 0.9875, ops 1,367,584, spikes/neuron 0.650, E_est 1.231 uJ, lat 16.646 ms/batch, train 155s, temp 67->66C, throttle False
+✅ snn_T10_seed1: acc 0.9875, ops 2,291,854, spikes/neuron 1.083, E_est 2.063 uJ, lat 30.546 ms/batch, train 294s, temp 66->64C, throttle False, FGSM 0.05:0.9673 0.1:0.9301 0.2:0.7483
+✅ snn_T25_seed1: acc 0.9901, ops 4,756,181, spikes/neuron 1.987, E_est 4.281 uJ, lat 82.825 ms/batch, train 723s, temp 68->64C, throttle False
+✅ cnn_T0_seed2: acc 0.9919, ops 1,533,952, E_est 7.056 uJ, lat 0.643 ms/batch, train 14s, temp 67->67C, throttle False, FGSM 0.05:0.9528 0.1:0.8014 0.2:0.3194
+✅ snn_T5_seed2: acc 0.9830, ops 1,442,508, spikes/neuron 0.675, E_est 1.298 uJ, lat 16.631 ms/batch, train 148s, temp 65->64C, throttle False

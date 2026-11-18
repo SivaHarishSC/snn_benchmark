@@ -1,0 +1,9 @@
+# torch/torchvision: CUDA 12.6 build -> pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.14.1+cu126
+torchvision==0.29.1+cu126
+snntorch==1.0.0
+numpy==2.5.4
+pandas==3.1.1
+matplotlib==3.11.2
+mlflow==3.18.0
+thop==0.1.1.post2209072238

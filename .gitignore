@@ -1,0 +1,31 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Dataset (re-downloaded automatically by torchvision)
+data/
+
+# MLflow local store (machine-specific absolute paths; results/results.csv is the committed record)
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Smoke-test output (regenerate with: python run_all.py --quick)
+results/quick/
+
+# Claude Code / AI assistant traces
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+.claude-mem/
+
+# Editors and OS
+.vscode/
+.idea/
+.ipynb_checkpoints/
+Thumbs.db
+desktop.ini
+.DS_Store
